@@ -4,10 +4,11 @@ import (
 	"log"
 	"os"
 
+	"heroku-backend-a-cocreate/config"
+	"heroku-backend-a-cocreate/controller"
+	"heroku-backend-a-cocreate/middleware"
+
 	"github.com/gin-gonic/gin"
-	"github.com/itp-backend/backend-a-co-create/config"
-	"github.com/itp-backend/backend-a-co-create/controller"
-	"github.com/itp-backend/backend-a-co-create/middleware"
 )
 
 func AllRouters() *gin.Engine {

@@ -3,11 +3,12 @@ package controller
 import (
 	"net/http"
 
+	"heroku-backend-a-cocreate/helper/header"
+	"heroku-backend-a-cocreate/helper/response"
+	"heroku-backend-a-cocreate/model"
+	"heroku-backend-a-cocreate/service"
+
 	"github.com/gin-gonic/gin"
-	"github.com/itp-backend/backend-a-co-create/helper/header"
-	"github.com/itp-backend/backend-a-co-create/helper/response"
-	"github.com/itp-backend/backend-a-co-create/model"
-	"github.com/itp-backend/backend-a-co-create/service"
 )
 
 var (

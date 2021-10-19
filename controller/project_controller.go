@@ -1,19 +1,19 @@
 package controller
 
 import (
-	"github.com/gin-gonic/gin"
-	"github.com/itp-backend/backend-a-co-create/dto"
-	"github.com/itp-backend/backend-a-co-create/helper/mc"
-	"github.com/itp-backend/backend-a-co-create/helper/response"
-	"github.com/itp-backend/backend-a-co-create/service"
-	log "github.com/sirupsen/logrus"
+	"heroku-backend-a-cocreate/dto"
+	"heroku-backend-a-cocreate/helper/mc"
+	"heroku-backend-a-cocreate/helper/response"
+	"heroku-backend-a-cocreate/service"
 	"net/http"
 	"strconv"
 	"time"
+
+	"github.com/gin-gonic/gin"
+	log "github.com/sirupsen/logrus"
 )
 
 const layoutFormatDate = "2006-01-02"
-
 
 func CreateProject(c *gin.Context) {
 
@@ -22,7 +22,6 @@ func CreateProject(c *gin.Context) {
 		response.BuildErrResponse(c, http.StatusBadRequest, "Failed to process request", errMC.Error())
 		return
 	}
-
 
 	var project dto.Project
 	project.Creator = userid

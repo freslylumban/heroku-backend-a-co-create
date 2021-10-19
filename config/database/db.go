@@ -3,8 +3,8 @@ package database
 import (
 	"fmt"
 
-	"github.com/itp-backend/backend-a-co-create/config"
-	"github.com/itp-backend/backend-a-co-create/model"
+	"heroku-backend-a-cocreate/config"
+	"heroku-backend-a-cocreate/model"
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"

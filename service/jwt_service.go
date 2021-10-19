@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"time"
 
+	"heroku-backend-a-cocreate/config"
+
 	"github.com/dgrijalva/jwt-go"
-	"github.com/itp-backend/backend-a-co-create/config"
 	log "github.com/sirupsen/logrus"
 )
 

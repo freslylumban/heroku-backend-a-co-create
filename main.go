@@ -1,6 +1,6 @@
 package main
 
-import "github.com/itp-backend/backend-a-co-create/router"
+import "heroku-backend-a-cocreate/router"
 
 func main() {
 	// c := cli.NewCli(os.Args)

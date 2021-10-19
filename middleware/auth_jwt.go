@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/itp-backend/backend-a-co-create/helper/header"
-	"github.com/itp-backend/backend-a-co-create/helper/response"
-	"github.com/itp-backend/backend-a-co-create/service"
+	"heroku-backend-a-cocreate/helper/header"
+	"heroku-backend-a-cocreate/helper/response"
+	"heroku-backend-a-cocreate/service"
 
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"

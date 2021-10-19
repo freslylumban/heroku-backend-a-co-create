@@ -2,8 +2,9 @@ package repository
 
 import (
 	"errors"
-	"github.com/itp-backend/backend-a-co-create/dto"
-	"github.com/itp-backend/backend-a-co-create/model"
+	"heroku-backend-a-cocreate/dto"
+	"heroku-backend-a-cocreate/model"
+
 	log "github.com/sirupsen/logrus"
 	"gorm.io/gorm"
 )

@@ -1,8 +1,9 @@
 package bind
 
 import (
+	"heroku-backend-a-cocreate/helper/header"
+
 	"github.com/gin-gonic/gin"
-	"github.com/itp-backend/backend-a-co-create/helper/header"
 )
 
 var (

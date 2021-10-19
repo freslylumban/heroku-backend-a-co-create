@@ -1,9 +1,10 @@
 package repository
 
 import (
-	"github.com/itp-backend/backend-a-co-create/config/database"
-	"github.com/itp-backend/backend-a-co-create/helper/bc"
-	"github.com/itp-backend/backend-a-co-create/model"
+	"heroku-backend-a-cocreate/config/database"
+	"heroku-backend-a-cocreate/helper/bc"
+	"heroku-backend-a-cocreate/model"
+
 	"gorm.io/gorm"
 )
 

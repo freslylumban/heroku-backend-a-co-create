@@ -1,10 +1,10 @@
 package service
 
 import (
-	"github.com/itp-backend/backend-a-co-create/dto"
-	"github.com/itp-backend/backend-a-co-create/helper/bc"
-	"github.com/itp-backend/backend-a-co-create/model"
-	"github.com/itp-backend/backend-a-co-create/repository"
+	"heroku-backend-a-cocreate/dto"
+	"heroku-backend-a-cocreate/helper/bc"
+	"heroku-backend-a-cocreate/model"
+	"heroku-backend-a-cocreate/repository"
 )
 
 type AuthService interface {
@@ -26,11 +26,11 @@ func VerifyCredential(email, password string) interface{} {
 }
 
 func CreateUser(user dto.RegisterDTO) model.Enrollment {
-    enrollmentUser := model.Enrollment{
-        NamaLengkap:      user.Name,
-        Email:            user.Email,
-        TopikDiminati:    user.TopikDiminati,
-    }
+	enrollmentUser := model.Enrollment{
+		NamaLengkap:   user.Name,
+		Email:         user.Email,
+		TopikDiminati: user.TopikDiminati,
+	}
 
 	userToCreate := model.User{
 		Name:     user.Name,

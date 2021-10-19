@@ -1,9 +1,9 @@
 package service
 
 import (
-	"github.com/itp-backend/backend-a-co-create/dto"
-	"github.com/itp-backend/backend-a-co-create/model"
-	"github.com/itp-backend/backend-a-co-create/repository"
+	"heroku-backend-a-cocreate/dto"
+	"heroku-backend-a-cocreate/model"
+	"heroku-backend-a-cocreate/repository"
 )
 
 type UserService interface {

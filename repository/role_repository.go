@@ -1,6 +1,6 @@
 package repository
 
-import "github.com/itp-backend/backend-a-co-create/model"
+import "heroku-backend-a-cocreate/model"
 
 type RoleRepo interface {
 	GetAllRole() []model.Role

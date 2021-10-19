@@ -1,9 +1,10 @@
 package service
 
 import (
-	"github.com/itp-backend/backend-a-co-create/dto"
-	"github.com/itp-backend/backend-a-co-create/model"
-	"github.com/itp-backend/backend-a-co-create/repository"
+	"heroku-backend-a-cocreate/dto"
+	"heroku-backend-a-cocreate/model"
+	"heroku-backend-a-cocreate/repository"
+
 	log "github.com/sirupsen/logrus"
 )
 
@@ -16,7 +17,7 @@ type IProjectService interface {
 }
 
 type projectService struct {
-	repo   repository.IProjectRepository
+	repo repository.IProjectRepository
 }
 
 func CreateProject(project *dto.Project) (*model.Project, error) {

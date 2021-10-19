@@ -1,13 +1,14 @@
 package controller
 
 import (
-	"github.com/gin-gonic/gin"
-	"github.com/itp-backend/backend-a-co-create/dto"
-	"github.com/itp-backend/backend-a-co-create/helper/response"
-	"github.com/itp-backend/backend-a-co-create/service"
-	log "github.com/sirupsen/logrus"
+	"heroku-backend-a-cocreate/dto"
+	"heroku-backend-a-cocreate/helper/response"
+	"heroku-backend-a-cocreate/service"
 	"net/http"
 	"strconv"
+
+	"github.com/gin-gonic/gin"
+	log "github.com/sirupsen/logrus"
 )
 
 func CreateArticle(c *gin.Context) {
@@ -24,7 +25,7 @@ func CreateArticle(c *gin.Context) {
 		response.BuildErrResponse(c, http.StatusInternalServerError, "Failed to process request", err.Error())
 		return
 	}
-	
+
 	response.BuildResponse(c, http.StatusCreated, "Success", article)
 	return
 }
@@ -80,7 +81,7 @@ func GetAllArticle(c *gin.Context) {
 		response.BuildErrResponse(c, http.StatusInternalServerError, "Failed to process request", err.Error())
 		return
 	}
-	
+
 	response.BuildResponse(c, http.StatusOK, "Success", articles)
 	return
 }

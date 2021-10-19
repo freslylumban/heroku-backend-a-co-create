@@ -3,10 +3,11 @@ package controller
 import (
 	"net/http"
 
+	"heroku-backend-a-cocreate/helper/mc"
+	"heroku-backend-a-cocreate/helper/response"
+	"heroku-backend-a-cocreate/service"
+
 	"github.com/gin-gonic/gin"
-	"github.com/itp-backend/backend-a-co-create/helper/mc"
-	"github.com/itp-backend/backend-a-co-create/helper/response"
-	"github.com/itp-backend/backend-a-co-create/service"
 )
 
 type EnrollmentController interface {
