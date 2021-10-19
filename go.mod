@@ -1,5 +1,7 @@
 module heroku-backend-a-cocreate
 
+// +heroku goVersion go1.16
+
 go 1.17
 
 require (
