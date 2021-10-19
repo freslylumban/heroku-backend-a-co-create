@@ -1,1 +1,1 @@
-web: github.com/itp-backend/backend-a-co-create
+web: heroku-backend-a-cocreate
